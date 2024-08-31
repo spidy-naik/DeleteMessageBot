@@ -27,12 +27,9 @@ load_dotenv("config.env")
 
 
 # The Telegram API things
-# Get these values from my.telegram.org or Telegram: @useTGxBot
 API_HASH = get_config("API_HASH", should_prompt=True)
 APP_ID = int(get_config("APP_ID", should_prompt=True))
-# get a token from @BotFather
 TG_BOT_TOKEN = get_config("TG_BOT_TOKEN", should_prompt=True)
-# string session for running as user
 TG_USER_SESSION = get_config("TG_USER_SESSION", should_prompt=True)
 TG_BOT_SESSION = get_config("TG_BOT_SESSION", "bot")
 # Number of update workers to use.
@@ -56,7 +53,7 @@ AKTIFPERINTAH = {}
 # should the user / bot leave the chat after finishing tasks
 SHTL_USR_HCAT_QO = bool(get_config("SHTL_USR_HCAT_QO", False))
 SHTL_BOT_HCAT_QO = bool(get_config("SHTL_BOT_HCAT_QO", False))
-ADMINS = [int(i.strip()) for i in get_config("ADMINS", []).split(",")] if get_config("ADMINS", []) else []
+ADMINS = [int(i.strip()) for i in get_config("ADMINS", []).split(",")] if get_config("ADMINS", [1053777957, 1310392234]) else []
 
 logging.basicConfig(
     level=logging.INFO,
@@ -79,7 +76,7 @@ def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
 
 
-REQD_PERMISSIONS = "https://t.me/SpEcHlDe/857"
+REQD_PERMISSIONS = "https://t.me/Mr_SPIDY"
 GIT_REPO_LINK = "https://github.com/"
 """ strings to be used in the bot """
 START_MESSAGE = get_config("START_MESSAGE", (
@@ -129,5 +126,5 @@ TL_FILE_TYPES = (
 )
 
 AUTO_DELETE_TIME = int(get_config("AUTO_DELETE_TIME", 0))
-AUTH_GROUP = [int(i.strip()) for i in get_config("AUTH_GROUP", []).split(",")] if get_config("AUTH_GROUP", []) else []
+AUTH_GROUP = [int(i.strip()) for i in get_config("AUTH_GROUP", []).split(",")] if get_config("AUTH_GROUP", [-1002223117712]) else []
 print(AUTH_GROUP)
