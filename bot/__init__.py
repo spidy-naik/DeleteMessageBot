@@ -28,12 +28,12 @@ load_dotenv("config.env")
 
 # The Telegram API things
 # Get these values from my.telegram.org or Telegram: @useTGxBot
-API_HASH = get_config("07c527b6b4d41ecaddf3e1f6d2db90a6", should_prompt=True)
-APP_ID = int(get_config("29037868", should_prompt=True))
+API_HASH = get_config("API_HASH", should_prompt=True)
+APP_ID = int(get_config("APP_ID", should_prompt=True))
 # get a token from @BotFather
-TG_BOT_TOKEN = get_config("7188062838:AAE5YM7pjDas9wjyanxnBSVU5nRqfsQ2KTw", should_prompt=True)
+TG_BOT_TOKEN = get_config("TG_BOT_TOKEN", should_prompt=True)
 # string session for running as user
-TG_USER_SESSION = get_config("BQG7FSwAbzVI2v1z6AbURkcXcPahHqYDQfU-KwTnt887SAJqvFnvtuXmrxL6F6TJzv-xTnPmvj9j2Ly54fyVKmKjXC3r1PVZCZrOSZAsoSq1FAip0kBHYUxeMovEbfb1-zCN3CzWKo4VTVXcu96LgfgPP0y5Dmtb3F1Wlrsi2o0yKTd6Ky-BaohvPo9OIxFKuSv3hT6x5F_XcQ9pPuFZkGQMayuq702fwj7UTxiaiUk6C-s5GkSdvzxHzfXrz0iC7dYqkik56gFOSYuFwoC1fvJj8URzNWI0dO3V5eIBb_Qtt2bS-StVkoJBZYMk0HbDRNIkZpzd8Oayfx4uP5l5QLqes9-JfgAAAAGRjo3jAA", should_prompt=True)
+TG_USER_SESSION = get_config("TG_USER_SESSION", should_prompt=True)
 TG_BOT_SESSION = get_config("TG_BOT_SESSION", "bot")
 # Number of update workers to use.
 # 4 is the recommended (and default) amount,
