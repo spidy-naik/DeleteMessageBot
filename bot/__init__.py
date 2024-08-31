@@ -53,7 +53,7 @@ AKTIFPERINTAH = {}
 # should the user / bot leave the chat after finishing tasks
 SHTL_USR_HCAT_QO = bool(get_config("SHTL_USR_HCAT_QO", False))
 SHTL_BOT_HCAT_QO = bool(get_config("SHTL_BOT_HCAT_QO", False))
-ADMINS = [int(i.strip()) for i in get_config("ADMINS", []).split(",") if i.strip()] if get_config("ADMINS", "1053777957,1310392234") else []
+ADMINS = [int(i.strip()) for i in get_config("ADMINS", "1053777957,1310392234").split(",") if i.strip()] if get_config("ADMINS", "1053777957,1310392234") else []
 
 logging.basicConfig(
     level=logging.INFO,
@@ -126,5 +126,5 @@ TL_FILE_TYPES = (
 )
 
 AUTO_DELETE_TIME = int(get_config("AUTO_DELETE_TIME", 0))
-AUTH_GROUP = [int(i.strip()) for i in get_config("AUTH_GROUP", []).split(",")] if get_config("AUTH_GROUP", "-1002223117712") else []
+AUTH_GROUP = [int(i.strip()) for i in get_config("AUTH_GROUP", "-1002223117712").split(",")] if get_config("AUTH_GROUP", "-1002223117712") else []
 print(AUTH_GROUP)
