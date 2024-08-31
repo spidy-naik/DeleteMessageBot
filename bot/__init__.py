@@ -53,7 +53,7 @@ AKTIFPERINTAH = {}
 # should the user / bot leave the chat after finishing tasks
 SHTL_USR_HCAT_QO = bool(get_config("SHTL_USR_HCAT_QO", False))
 SHTL_BOT_HCAT_QO = bool(get_config("SHTL_BOT_HCAT_QO", False))
-ADMINS = [int(i.strip()) for i in get_config("ADMINS", []).split(",")] if get_config("ADMINS", ["1053777957,1310392234"]) else []
+ADMINS = [int(i.strip()) for i in get_config("ADMINS", "1053777957,1310392234").split(",") if i.strip()] if get_config("ADMINS", "1053777957,1310392234") else []
 
 logging.basicConfig(
     level=logging.INFO,
